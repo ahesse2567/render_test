@@ -1,0 +1,33 @@
+# Quarto manuscripts: https://quarto.org/docs/manuscripts/authoring/rstudio.html
+
+project:
+  type: manuscript
+
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+  message: false
+
+bibliography: references.bib
+csl: "thieme-german.csl"
+citation-abbreviations: "ncbi-abbreviations.json"
+
+# for the time being, I don't want the "Source: Article Notebook" to appear
+notebook-links: false
+
+format:
+  html: 
+    toc: true
+    theme: cosmo
+    comments:
+      hypothesis: true
+    # csl: "thieme-german.csl"
+  docx: 
+    prefer-html: true
+    # csl: "thieme-german.csl"
+  # jats: default
+  pdf:
+    # csl: "thieme-german.csl"
+    colorlinks: true
+    documentclass: scrartcl # this is equivalent to 'article'
